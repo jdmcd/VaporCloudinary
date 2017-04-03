@@ -29,7 +29,7 @@ final public class Cloudinary {
         self.cloudName = cloudName
     }
     
-    public func upload(file: Data, publicId: String, timestamp: Int? = nil, signature: String? = nil) throws {
+    public func upload(file: Data, publicId: String, timestamp: Int? = nil, signature: String? = nil) throws -> Response {
         let unixTimestamp = timestamp ?? Int(Date().timeIntervalSince1970)
         let signature = createSignature(publicId: publicId, timestamp: unixTimestamp)
         
