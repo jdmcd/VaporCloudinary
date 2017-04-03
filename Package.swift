@@ -3,5 +3,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "VaporCloudinary"
+    name: "VaporCloudinary",
+    dependencies: [
+        .Package(url: "https://github.com/vapor/vapor", majorVersion: 1, minor: 5)
+    ]
 )

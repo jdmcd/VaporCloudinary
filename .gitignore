@@ -2,3 +2,7 @@
 /.build
 /Packages
 /*.xcodeproj
+
+*.pins
+*.xcuserstate
+*.xcworkspacedata
