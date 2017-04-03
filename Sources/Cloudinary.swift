@@ -30,8 +30,6 @@ final public class Cloudinary {
     private func createSignature(publicId: String, timestamp: Int? = nil) -> String {
         let unixTimestamp = timestamp ?? Int(Date().timeIntervalSince1970)
         
-        let sha1 = Sha
-        
         let signature = "public_id=\(publicId)&timestamp=\(unixTimestamp)\(apiSecret)"
         return ""
     }
