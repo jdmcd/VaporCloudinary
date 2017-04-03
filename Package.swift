@@ -5,7 +5,6 @@ import PackageDescription
 let package = Package(
     name: "VaporCloudinary",
     dependencies: [
-        .Package(url: "https://github.com/vapor/vapor", majorVersion: 1, minor: 5),
         .Package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", majorVersion: 0)
     ]
 )
